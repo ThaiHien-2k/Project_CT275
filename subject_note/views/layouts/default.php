@@ -20,7 +20,7 @@
     <?=$this->section("page_specific_css")?>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top" style="background-image: url(../css/pic/bg.webp); ">
+    <nav class="navbar navbar-default navbar-static-top" style="background-image: url(http://localhost/css/pic/bg.webp); ">
         <div class="container" >
             <div class="navbar-header" >
 
@@ -76,7 +76,7 @@
     </nav>
 
     <?=$this->section("page")?>
-    <footer class="footer" style="background-image: url(../css/pic/bg.webp)">
+    <footer class="footer" style="background-image: url(http://localhost/css/pic/bg.webp)">
       <div class="container">
         <p class="text-muted" ><strong>Copyright &copy; 2022 by Thành Lộc & Thái Hiền</strong>
         </p>

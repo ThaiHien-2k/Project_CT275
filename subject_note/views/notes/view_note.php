@@ -19,7 +19,7 @@
             <div class="inner-wrapper row">
                 <div class="col-md-12">
                 
-                    <!-- FLASH MESSAGES HERE -->
+                  
                     <a href="/home" class="btn btn-primary" style="margin-bottom: 30px;">
                         <i class="fa-solid fa-house"></i> Trang chủ</a>
                     <a href="/subjects/view_subject" class="btn btn-primary" style="margin-bottom: 30px;">

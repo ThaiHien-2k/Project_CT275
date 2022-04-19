@@ -14,7 +14,6 @@ class Subject extends Model
                 $errors['subject_name'] = 'subject_name is required.';
             }
  
-    
             if (strlen($data['so_chi']) > 10 ) {
                 $errors['so_chi'] = 'Invalid so_chi.';
             }

@@ -1,7 +1,9 @@
 <?php $this->layout("layouts/default", ["title" => APPNAME]) ?>
+<?php $this->start("page_specific_css") ?>
 
-<?php $this->start("page") ?>
-<div class="container">
+    <?php $this->stop() ?>
+    <?php $this->start("page") ?>
+    <div class="container">
     <section id="inner" class="inner-section section">
         <div class="container" style="border: solid 3px; border-radius: 15px;">
 
@@ -58,12 +60,4 @@
         </div>
     </section>
 </div>
-<?php $this->stop() ?>
-
-<?php $this->start("page_specific_js") ?>
-    <script>
-        $(document).ready(function(){
-            new WOW().init();
-        });
-    </script>
 <?php $this->stop() ?>

@@ -81,7 +81,7 @@
             </div>
 
         </div>
-    </section>
+        </section>
 </div>
 <?php $this->stop() ?>
 
