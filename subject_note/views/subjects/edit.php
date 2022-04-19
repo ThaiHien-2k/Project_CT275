@@ -74,6 +74,7 @@
 
                         <!-- Submit -->
                         <button type="submit" name="submit" id="submit" class="btn btn-success">Cập nhật môn</button>
+                        <a href="/subjects/view_subject "class="btn btn-danger"> Thoát</a>
                     </form>
 
                 </div>

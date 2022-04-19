@@ -48,7 +48,8 @@
                  
 
                         <!-- Submit -->
-                        <button type="submit" name="submit" id="submit" class="btn btn-primary">Cặp nhặt ghi chú</button>
+                        <button type="submit" name="submit" id="submit" class="btn btn-primary">Cập nhật ghi chú</button>
+                        <a href="/notes/view_note"class="btn btn-danger"> Thoát</a>
                     </form>
 
                 </div>

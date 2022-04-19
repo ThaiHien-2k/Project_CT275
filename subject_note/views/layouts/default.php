@@ -12,6 +12,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/sticky-footer.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href="/css/animate.css" rel="stylesheet">
     <link href="../css/type.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +33,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <strong> <a class="navbar-brand" href="#" style="color: white">
+                <strong> <a class="navbar-brand" href="/home" style="color: white">
                     <?=$this->e($title)?>
                 </a></strong>
             </div>

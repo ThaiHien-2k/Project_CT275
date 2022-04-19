@@ -13,14 +13,7 @@ class Subject extends Model
             if (! $data['subject_name']) {
                 $errors['subject_name'] = 'subject_name is required.';
             }
-            // if( $data['ma_subject'] == sta){
-            //     $errors['ma_subject'] = 'Mã môn đã tồn tại.';
-            // }
-
-
-// if (static::where('ma_subject', $data['ma_subject'])->count() > 0 ) {
-//     $errors['ma_subject'] = 'Mã môn đã tồn tại.';
-//     }
+ 
     
             if (strlen($data['so_chi']) > 10 ) {
                 $errors['so_chi'] = 'Invalid so_chi.';

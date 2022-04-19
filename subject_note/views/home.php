@@ -9,7 +9,7 @@
 <div class="container"style="border: solid 3px; border-radius: 15px;">
     <section id="inner" class="inner-section section">
             <!-- SECTION HEADING -->
-            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Môn Học</h2>
+            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Trang chủ</h2>
             <div class="row">
                 <!-- <div class="col-md-6 col-md-offset-3 text-center">
                     <p class="wow fadeIn" data-wow-duration="2s">View your all contacs here.</p>
@@ -22,9 +22,9 @@
                     <!-- FLASH MESSAGES HERE -->
 
                     <a href="/subjects/view_subject" class="btn btn-primary" style="margin-bottom: 30px;">
-                        <i class="fa fa-plus"></i> Xem tất cả môn</a>
+                        <i class="fa fa-eye"></i> Xem tất cả môn</a>
                     <a href="/notes/view_note" class="btn btn-primary" style="margin-bottom: 30px;">
-                        <i class="fa fa-plus"></i> Xem tất cả ghi chú</a>
+                        <i class="fa fa-eye"></i> Xem tất cả ghi chú</a>
 
                     <!-- Table Starts Here -->
                     <table id="subjects" class="table table-bordered table-responsive table-striped">
@@ -49,6 +49,7 @@
                                 <td><?=$this->e($note->note)?></td>
                             </tr>  
                             <?php endif ?>
+                            
                             <?php endforeach ?>
                         <?php endforeach ?>
                         </tbody>
@@ -58,24 +59,7 @@
             </div>
     </section>
 </div>
-<div id="delete-confirm" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close"
-                    data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Xác Nhận</h4>
-            </div>
-            <div class="modal-body">Bạn có muốn xóa môn này?</div>
-            <div class="modal-footer">
-                <button type="button" data-dismiss="modal"
-                    class="btn btn-danger" id="delete">Delete</button>
-                <button type="button" data-dismiss="modal"
-                    class="btn btn-default">Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <?php $this->stop() ?>
 

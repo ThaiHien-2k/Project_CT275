@@ -14,10 +14,7 @@ class Note extends Model
             $errors['note'] = 'note is required.';
             
         }
-        
-// if (static::where('ma_Mon', $data['ma_Mon'])->count() > 0 ) {
-//     $errors['ma_Mon'] = 'Mã môn đã tồn tại.';
-//     }
+
 
         return $errors;
     }

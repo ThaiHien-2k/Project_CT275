@@ -54,11 +54,6 @@ protected function filterNoteData(array $data){
 	return [
 		'note' => $data['note'] ?? null,
 		'ma_Mon' => $data['ma_Mon'] ?? null,
-
-// 'phone' => preg_replace('/\D+/', '', $data['phone']),
-		// 'teacher' => $data['teacher'] ?? null,
-		// 'so_chi'=> $data['so_chi'] ?? null,
-		// 'ma_note' => $data['ma_note'] ?? null,
 ];}
 
 

@@ -30,9 +30,7 @@ class User extends Model
     public function subjects() {
         return $this->hasMany(subject::class);
         }
-        // public function notes() {
-        //     return $this->hasMany(note::class);
-        //     }  
+
         public function notes() {
             return $this->hasMany(note::class);
             }

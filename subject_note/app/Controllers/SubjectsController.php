@@ -23,6 +23,7 @@ class SubjectsController extends Controller
 		$this->sendPage('subjects/view_subject', [
 
 			'subjects' => Guard::user()->subjects
+			
 			]);
 	}
 
@@ -53,7 +54,6 @@ class SubjectsController extends Controller
 protected function filterSubjectData(array $data){
 	return [
 		'subject_name' => $data['subject_name'] ?? null,
-// 'phone' => preg_replace('/\D+/', '', $data['phone']),
 		'teacher' => $data['teacher'] ?? null,
 		'so_chi'=> $data['so_chi'] ?? null,
 		'ma_subject' => $data['ma_subject'] ?? null,

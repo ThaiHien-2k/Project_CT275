@@ -20,9 +20,13 @@
                 <div class="col-md-12">
                 
                     <!-- FLASH MESSAGES HERE -->
-
+                    <a href="/home" class="btn btn-primary" style="margin-bottom: 30px;">
+                    <i class="fa-solid fa-house"></i> Trang chủ</a>
+                    <a href="/notes/view_note" class="btn btn-primary" style="margin-bottom: 30px;">
+                        <i class="fa fa-eye"></i> Xem ghi chú</a>
                     <a href="/subjects/add" class="btn btn-primary" style="margin-bottom: 30px;">
                         <i class="fa fa-plus"></i> Thêm Môn</a>
+                    
 
                     <!-- Table Starts Here -->
                     <table id="subjects" class="table table-bordered table-responsive table-striped">
@@ -43,10 +47,10 @@
                                 <td><?=$this->e($subject->teacher)?></td>
                                 <td><?=$this->e($subject->so_chi)?></td>
                                 <td><a href="/subjects/edit/<?=$subject->id?>"class="btn btn-xs btn-warning">
-                                    <i alt="Edit" class="fa fa-pencil"> Sửa</i></a>
+                                    <i class="fa-solid fa-pen"></i> Sửa</i></a>
                                     <form class="delete" action="/subjects/delete/<?=$subject->id?>"method="POST" style="display: inline;">
                                     <button type="submit" class="btn btn-xs btn-danger"name="delete-subject">
-                                    <i alt="Delete" class="fa fa-trash"> Xóa</i>
+                                    <i class="fa-solid fa-trash"></i> Xóa</i>
                                     </button>
                                     </form>
                                 </td>

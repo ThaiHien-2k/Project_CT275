@@ -9,7 +9,7 @@
 <div class="container" style="border: solid 3px; border-radius: 15px;">
     <section id="inner" class="inner-section section">
             <!-- SECTION HEADING -->
-            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Môn Học</h2>
+            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Ghi chú</h2>
             <div class="row">
                 <!-- <div class="col-md-6 col-md-offset-3 text-center">
                     <p class="wow fadeIn" data-wow-duration="2s">View your all contacs here.</p>
@@ -20,9 +20,13 @@
                 <div class="col-md-12">
                 
                     <!-- FLASH MESSAGES HERE -->
-
+                    <a href="/home" class="btn btn-primary" style="margin-bottom: 30px;">
+                        <i class="fa-solid fa-house"></i> Trang chủ</a>
+                    <a href="/subjects/view_subject" class="btn btn-primary" style="margin-bottom: 30px;">
+                        <i class="fa fa-eye"></i> Xem môn học</a>
                     <a href="/notes/add" class="btn btn-primary" style="margin-bottom: 30px;">
                         <i class="fa fa-plus"></i> Thêm ghi chú</a>
+                   
 
                     <!-- Table Starts Here -->
                     <table id="notes" class="table table-bordered table-responsive table-striped">
@@ -40,10 +44,10 @@
                                 <td><?=$this->e($note->note)?></td>
 
                                 <td><a href="/notes/edit/<?=$note->id?>"class="btn btn-xs btn-warning">
-                                    <i alt="Edit" class="fa fa-pencil"> Sửa</i></a>
+                                    <i class="fa-solid fa-pen"></i> Sửa</i></a>
                                     <form class="delete" action="/notes/delete/<?=$note->id?>"method="POST" style="display: inline;">
                                     <button type="submit" class="btn btn-xs btn-danger"name="delete-note">
-                                    <i alt="Delete" class="fa fa-trash"> Xóa</i>
+                                    <i class="fa-solid fa-trash"></i> Xóa</i>
                                     </button>
                                     </form>
                                 </td>
