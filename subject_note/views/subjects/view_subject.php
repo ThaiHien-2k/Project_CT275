@@ -6,7 +6,7 @@
 <?php $this->stop() ?>
 
 <?php $this->start("page") ?>
-<div class="container">
+<div class="container" style="border: solid 3px; border-radius: 15px;;">
     <section id="inner" class="inner-section section">
             <!-- SECTION HEADING -->
             <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Môn Học</h2>
@@ -32,7 +32,7 @@
                                 <th>Tên môn</th>
                                 <th>Giảng viên</th>
                                 <th>Số chỉ</th>
-                                <th>action</th>
+                                <th>Sửa/Xóa</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,10 +43,10 @@
                                 <td><?=$this->e($subject->teacher)?></td>
                                 <td><?=$this->e($subject->so_chi)?></td>
                                 <td><a href="/subjects/edit/<?=$subject->id?>"class="btn btn-xs btn-warning">
-                                    <i alt="Edit" class="fa fa-pencil"> Edit</i></a>
+                                    <i alt="Edit" class="fa fa-pencil"> Sửa</i></a>
                                     <form class="delete" action="/subjects/delete/<?=$subject->id?>"method="POST" style="display: inline;">
                                     <button type="submit" class="btn btn-xs btn-danger"name="delete-subject">
-                                    <i alt="Delete" class="fa fa-trash"> Delete</i>
+                                    <i alt="Delete" class="fa fa-trash"> Xóa</i>
                                     </button>
                                     </form>
                                 </td>
@@ -59,20 +59,20 @@
             </div>
     </section>
 </div>
-<div id="delete-confirm" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+<div id="delete-confirm" class="modal fade" role="dialog" >
+    <div class="modal-dialog" style="border: solid black 1px; border-radius: 5px">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header"style="background-image: url(../css/pic/bg.webp)">
                 <button type="button" class="close"
                     data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Xác Nhận</h4>
+                <h4 class="modal-title" >Xác Nhận</h4>
             </div>
-            <div class="modal-body">Bạn có muốn xóa môn này?</div>
+            <div class="modal-body"><h4>Bạn có muốn xóa môn này ?</h4></div>
             <div class="modal-footer">
                 <button type="button" data-dismiss="modal"
-                    class="btn btn-danger" id="delete">Delete</button>
+                    class="btn btn-danger" id="delete">Xóa</button>
                 <button type="button" data-dismiss="modal"
-                    class="btn btn-default">Cancel</button>
+                    class="btn btn-default">Hủy</button>
             </div>
         </div>
     </div>

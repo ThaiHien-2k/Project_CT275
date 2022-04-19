@@ -1,11 +1,11 @@
 <?php $this->layout("layouts/default", ["title" => APPNAME]) ?>
 
 <?php $this->start("page") ?>
-<div class="container">
+<div class="container" style="background-image: url(../css/pic/bg.webp); border: solid 3px; border-radius: 15px;   width: 700px;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+            <div class="panel panel-default" style="background: rgba(0,0,0,0.0); border: none;">
+                <div class="panel-heading"style="background: rgba(0,0,0,0.0); border: none;"><h1>Register</h1></div>
                 <div class="panel-body">
 
                     <form class="form-horizontal" role="form" method="POST" action="/register">
@@ -66,7 +66,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success" style="border-radius: 100px;">
                                     Register
                                 </button>
                             </div>

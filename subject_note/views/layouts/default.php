@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   
 
     <title><?=$this->e($title)?></title>
 
@@ -12,16 +13,18 @@
     <link href="/css/sticky-footer.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/animate.css" rel="stylesheet">
+    <link href="../css/type.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <?=$this->section("page_specific_css")?>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
+    <nav class="navbar navbar-default navbar-static-top" style="background-image: url(../css/pic/bg.webp); ">
+        <div class="container" >
+            <div class="navbar-header" >
 
                 <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" >
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -29,9 +32,9 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="/">
+                <strong> <a class="navbar-brand" href="#" style="color: white">
                     <?=$this->e($title)?>
-                </a>
+                </a></strong>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -41,11 +44,11 @@
                 </ul>
 
                 <!-- Right Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" >
                     <!-- Authentication Links -->
                     <?php if (! \App\SessionGuard::isUserLoggedIn()): ?>
-                        <li><a href="/login">Login</a></li>
-                        <li><a href="/register">Register</a></li>
+                            <li > <a href="/login" ><span style="color: red;">Login</span></a></li>
+                            <li> <a href="/register"><span style="color: red">Register</span></a></li>
                     <?php else: ?>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -72,10 +75,11 @@
     </nav>
 
     <?=$this->section("page")?>
-
-    <footer class="footer">
+    <footer class="footer" style="background-image: url(../css/pic/bg.webp)">
       <div class="container">
-        <p class="text-muted">Copyright &copy; 2021 Web Development Course</p>
+        <p class="text-muted" ><strong>Copyright &copy; 2022 by Thành Lộc & Thái Hiền</strong>
+        </p>
+           
       </div>
     </footer>    
 

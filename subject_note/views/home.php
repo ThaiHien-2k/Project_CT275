@@ -6,7 +6,7 @@
 <?php $this->stop() ?>
 
 <?php $this->start("page") ?>
-<div class="container">
+<div class="container"style="border: solid 3px; border-radius: 15px;">
     <section id="inner" class="inner-section section">
             <!-- SECTION HEADING -->
             <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Môn Học</h2>

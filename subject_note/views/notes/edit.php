@@ -3,20 +3,20 @@
 <?php $this->start("page") ?>
 <div class="container">
     <section id="inner" class="inner-section section">
-        <div class="container">
+        <div class="container" style="border: solid 3px; border-radius: 15px;">
 
             <!-- SECTION HEADING -->
-            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">notes</h2>
+            <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Ghi chú</h2>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <p class="wow fadeIn" data-wow-duration="2s">Update your notes here.</p>
+                    <p class="wow fadeIn" data-wow-duration="2s">Cặp nhật ghi chú ở đây.</p>
                 </div>
             </div>
 
             <div class="inner-wrapper row">
                 <div class="col-md-12">
 
-                    <form name="frm" id="frm" action="/notes/<?=$this->e($note['id'])?>" method="post" class="col-md-6 col-md-offset-3">
+                    <form name="frm" id="frm" action="/notes/<?=$this->e($note['id'])?>" method="post" class="col-md-6 col-md-offset-3" style="margin-bottom:7%">
 
                         <!-- Name -->
                         <div class="form-group<?=isset($errors['ma_Mon']) ? ' has-error' : '' ?>">
@@ -33,7 +33,7 @@
 
                         <!-- teacher -->
                         <div class="form-group<?=isset($errors['note']) ? ' has-error' : '' ?>">
-                            <label for="description">note </label>
+                            <label for="description">Ghi chú </label>
                             <textarea name="note" id="note" class="form-control" 
                                 placeholder="Enter note (maximum character limit: 255)"><?=$this->e($note['note'])?></textarea>
 
@@ -48,7 +48,7 @@
                  
 
                         <!-- Submit -->
-                        <button type="submit" name="submit" id="submit" class="btn btn-primary">Update note</button>
+                        <button type="submit" name="submit" id="submit" class="btn btn-primary">Cặp nhặt ghi chú</button>
                     </form>
 
                 </div>

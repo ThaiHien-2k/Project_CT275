@@ -3,7 +3,7 @@
 <?php $this->start("page") ?>
 <div class="container">
     <section id="inner" class="inner-section section">
-        <div class="container">
+        <div class="container" style="border: solid 3px; border-radius: 15px;">
 
             <!-- SECTION HEADING -->
             <h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Môn</h2>
@@ -16,7 +16,7 @@
             <div class="inner-wrapper row">
                 <div class="col-md-12">
 
-                    <form name="frm" id="frm" action="/subjects/<?=$this->e($subject['id'])?>" method="post" class="col-md-6 col-md-offset-3">
+                    <form name="frm" id="frm" action="/subjects/<?=$this->e($subject['id'])?>" method="post" class="col-md-6 col-md-offset-3" style="margin-bottom: 7%;">
 
                           <!-- ma_subject -->
 
