@@ -24,16 +24,17 @@
                     <a href="/subjects/view_subject" class="btn btn-primary" style="margin-bottom: 30px;">
                         <i class="fa fa-eye"></i> Xem tất cả môn</a>
                     <a href="/notes/view_note" class="btn btn-primary" style="margin-bottom: 30px;">
-                        <i class="fa fa-eye"></i> Xem tất cả ghi chú</a>
-
+                        <i class="fa fa-eye"></i> Xem tất cả ghi chú</a><br>
+                    <div><strong>Hôm nay là: </strong><?=$this->e(date("d/m/Y",))?></div>
+                    <br>
                     <!-- Table Starts Here -->
                     <table id="subjects" class="table table-bordered table-responsive table-striped">
                         <thead>
                             <tr>
                                 <th>Mã môn</th>
                                 <th>Tên môn</th>
-                                <th>Giảng viên</th>
-                                <th>Số chỉ</th>
+                                <th>Ngày tạo ghi chú</th>
+                                <th>Cập nhật lần cuối</th>
                                 <th>Ghi chú</th>
                             </tr>
                         </thead>
@@ -44,8 +45,8 @@
                             <tr>
                                 <td><?=$this->e($subject->ma_subject)?></td>
                                 <td><?=$this->e($subject->subject_name)?></td>
-                                <td><?=$this->e($subject->teacher)?></td>
-                                <td><?=$this->e($subject->so_chi)?></td>
+                                <td style="text-align:right"><?=$this->e(date("d/m/Y",(strtotime($note->created_at))))?></td>
+                                <td style="text-align:right"><?=$this->e(date("d/m/Y",(strtotime($note->updated_at))))?></td>
                                 <td><?=$this->e($note->note)?></td>
                             </tr>  
                             <?php endif ?>
