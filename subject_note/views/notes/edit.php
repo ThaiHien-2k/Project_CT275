@@ -19,17 +19,27 @@
                     <form name="frm" id="frm" action="/notes/<?=$this->e($note['id'])?>" method="post" class="col-md-6 col-md-offset-3" style="margin-bottom:7%">
 
                         <!-- Name -->
-                        <div class="form-group<?=isset($errors['ma_Mon']) ? ' has-error' : '' ?>">
-                            <label for="ma_Mon">Tên Môn</label>
-                            <input type="text" name="ma_Mon" class="form-control" maxlen="255" id="ma_Mon" 
-                                placeholder="Enter ma_Mon" value="<?=$this->e($note['ma_Mon'])?>" />
+                        <div class="control-group <?=isset($errors['ma_Mon']) ? ' has-error' : '' ?>">
+                            <label  for="ma_Mon">Mã môn</label>
+                                <div class="controls">
+                                    <select name="ma_Mon" class="span8 tip form-control" onChange=""  required>
+                                        <option value="">Chọn mã môn</option> 
+                                            <?php $con = new mysqli('localhost','root', '', 'subject_note');
+                                                $query=mysqli_query($con,"select * from subjects");
+                                                    while($row=mysqli_fetch_array($query))
+                                                {?>
 
-                            <?php if (isset($errors['ma_Mon'])): ?>
-                                <span class="help-block">
-                                    <strong><?=$this->e($errors['ma_Mon'])?></strong>
-                                </span>
-                            <?php endif ?>                                
-                        </div>
+                                        <option value="<?=isset($row['ma_subject']) ? $this->e($row['ma_subject']) : '' ?>"><?php echo $row['ma_subject'];?></option>
+                                            <?php } ?>
+                                    </select>
+
+                                            <?php if (isset($errors['ma_Mon'])): ?>
+                                                <span class="help-block">
+                                                    <strong><?=$this->e($errors['ma_Mon'])?></strong>
+                                                </span>
+                                            <?php endif ?>      
+                                </div>
+                        </div>                        
 
                         <!-- teacher -->
                         <div class="form-group<?=isset($errors['note']) ? ' has-error' : '' ?>">
